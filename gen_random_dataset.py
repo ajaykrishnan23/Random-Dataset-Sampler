@@ -33,7 +33,7 @@ def random_sample_dataset(source,dest,subset_size):
     random_points_fnames = random.sample(images, subset_size_per_dir)
     filenames.extend(random_points_fnames)
     print(folder,len(random_points_fnames))
-  prepare_dataset(filenames, os.path.join(dest,'Images'))
+  prepare_dataset(filenames, dest)
 
 def main():
 
